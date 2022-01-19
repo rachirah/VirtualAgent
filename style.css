@@ -1,0 +1,76 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background:#45badd;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('./robot.gif');
+    background-size: contain; 
+    background-position:  left center; 
+    background-repeat: no-repeat; 
+}
+
+.button{
+    width: 200px;
+    height: 30px;
+    background: pink;
+    outline: none;
+    border-color: red;
+    border-radius:5px;
+    margin:5px;
+    box-shadow: 0px 1.5px 4px 2px blue;
+}
+
+button:hover{
+    filter: brightness(95%);
+
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+button:disabled{
+    cursor: default;
+    filter:brightness(30%);
+}
+
+.container #para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+     /* height:20px;  */
+    margin-bottom: 20px;
+    border: 10px solid red;
+    border-color: rgb(78, 14, 138);
+    background:white;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 50px;
+    color:rgb(3, 59, 7)
+
+}
+
+
+@media screen and (max-width:1000px){
+    .container{
+        background-position: center center;
+    
+    }
+    .button{
+        box-shadow:0px 1.5px 4px 2px red; ;
+    }
+}
+
+
